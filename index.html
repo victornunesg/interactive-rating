@@ -39,7 +39,7 @@
     </ul>
 
 
-    <button class="btn-submit"> <!--Submit button-->
+    <button class="btn-submit" id="submit"> <!--Submit button created-->
       Submit
     </button>
 
@@ -49,28 +49,29 @@
 
   <!-- Thank you state start -->
 
-  <div class="thank-you">
+  <div class="thank-you hidden"> <!--"hidden" is necessary to hide/show this part when running the code-->
     
     <img src="./images/illustration-thank-you.svg" alt="">
 
-    <p>
-      You selected <!-- Add rating here -->
+    <p class="rate-text">
+      You selected 
+      <span id="rating"></span> <!--as this code doesn't have validation, when user don't select a rate button, the biggest rate will be applied-->
       out of 5
     </p>
 
     <h2>
       Thank you!
-    </h2>
+    </h2> 
 
     <p>
       We appreciate you taking the time to give a rating. If you ever need more support, 
       don’t hesitate to get in touch!
     </p>
 
-    <button class="btn-submit"> <!--Extra button to do another rate-->
+    <button class="btn-submit" id="rate-again"> <!--Extra button to do another rate-->
       Rate again!
     </button>
-      
+
   </div>
 
     <!-- Thank you state end -->
